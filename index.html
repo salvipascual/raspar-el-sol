@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>ScratchCard 2</title>
+	<title>Eclipse</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,21 +12,40 @@
 	<script src="scratchcard.min.js"></script>
 	<script type="text/javascript">
 		// message
-//		alert("Intenta razgar el sol");
+		alert("Intenta eclipsar el sol");
 
 		window.addEventListener('load', function () {
 		  var scContainer = document.getElementById('js--sc--container');
 		  var sc = new ScratchCard('#js--sc--container', {
 			enabledPercentUpdate: true,
 			scratchType: SCRATCH_TYPE.CIRCLE,
-			brushSrc: 'images/brush.png',
 			containerWidth: 375,
 			containerHeight: 667,
 			imageForwardSrc: 'images/sunset.png',
 			imageBackgroundSrc: '',
-			htmlBackground: '<p class="text"><strong>Hola mundo i am HTML content !</strong></p>',
+			htmlBackground: `<div class="text">
+				<h1>Eclipse</h1>
+				Tus labios producen una risa<br>
+				Que eclipsa el atardecer.<br>
+				Y detiene el viento,<br>
+				Y apacigua las olas.<br><br>
+
+				Y se propaga por el aire<br>
+				Como una onda, hacia mis oídos.<br>
+				Y mi corazón se salta un palpitar,<br>
+				Y mi cerebro se desconecta.<br><br>
+
+				De pronto tus ojos brillan,<br>
+				Y la lengua recorre tus labios.<br>
+				Y tus dientes se separan<br>
+				Y estallan, en una carcajada.<br><br>
+
+				Un ciclón de alegría me estremece,<br>
+				Y los cristales vibran,<br>
+				Y la tierra tiembla.<br>
+				¡Tal es el poder de tu sonrisa!</div>`,
 			clearZoneRadius: 30,
-			percentToFinish: 100, // When the percent exceeds 50 on touchend event the callback will be exec.
+			percentToFinish: 100,
 			nPoints: 30,
 			pointSize: 20,
 			callback: function () { }
@@ -36,3 +55,6 @@
 	</script>
 </body>
 </html>
+
+
+
